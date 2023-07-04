@@ -10,7 +10,7 @@ const registerUser = async(req, res) => {
     let user = await userModel.findOne({ email });
 
     if (user) {
-        res.status(400).json('Ooops... This enail address has already been used by another user');
+        res.status(400).json('Ooops... This email address has already been used by another user');
         return;
     };
     
