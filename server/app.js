@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 const userRotes = require('./routers/userRoutes');
 
 const cors = require('cors');
